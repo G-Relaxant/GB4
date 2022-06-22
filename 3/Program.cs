@@ -1,4 +1,6 @@
-﻿Console.WriteLine("Введите число N: ");
+﻿// Нахождение факториала
+
+Console.WriteLine("Введите число N: ");
 int num = Convert.ToInt32(Console.ReadLine());
 int product = 1;
 for(int i = 1; i <= num; i++)
