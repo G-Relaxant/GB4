@@ -22,12 +22,16 @@ void Method(int a, int b, double c)
 {
     double x = Convert.ToDouble(i);
     double y = Convert.ToDouble(a);
+    double x1 = 0;
     x = y / c;
-    i = Convert.ToInt32(x);
+    x1 = Math.Floor(x);                 // Но лучше конечно же было бы написать только с double (без инт) переменными
+    i = Convert.ToInt32(x1);
     c = c * 10;
     b = b + 1;
 }
+
 Console.Write("В вашем числе " + b);
+
 int remn = b % 10;
 if(b > 9 && b < 21)
 {
